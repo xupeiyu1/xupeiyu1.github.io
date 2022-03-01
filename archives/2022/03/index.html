@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>Archives: 2022/3 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/archives/2022/03/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -152,403 +152,41 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-HTML-文本标签" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>块状和内联标签</strong></p>
-<p>上节课我们学习了HTML的基本结构，下面我们来写一段简单的段落，</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">  Unrivalled luxury, stunning white-sand beaches and an amazing underwater world</span><br><span class="line">  make Maldives an obvious choice for a true holiday of a lifetime.</span><br><span class="line">  &lt;img</span><br><span class="line">    src=&quot;https://document.youkeda.com/P3-1-HTML-CSS/1.3/1-3-island-2.jpg&quot;</span><br><span class="line">    alt=&quot;&quot;</span><br><span class="line">  /&gt;</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/1.png" alt="img"></p>
-<p>可以看到段落中有文字，有图片，内容丰富。但是这样的文字和图片显示在同一行，显得有些不美观。如果想下图这样，图片与文字分行显示就好了。有没有办法吧如片和文字分行呢？</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/2.png" alt="img"></p>
-<p>很简单，我们可以这么做，把图片单独用段落标签包起来；</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">  Unrivalled luxury, stunning white-sand beaches and an amazing underwater world</span><br><span class="line">  make Maldives an obvious choice for a true holiday of a lifetime.</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;p&gt;</span><br><span class="line">  &lt;img</span><br><span class="line">    src=&quot;https://document.youkeda.com/P3-1-HTML-CSS/1.3/1-3-island-2.jpg&quot;</span><br><span class="line">    alt=&quot;&quot;</span><br><span class="line">  /&gt;</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-<p>现在网页的结构是这样的，有两个段落，第一行是文字。第二个是图片：</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/3.png" alt="img"></p>
-<p>为什么这么做就可以让文字和图片分行显示呢?<br>这是因为<img> 标签是内联标签，而<p>标签是块状标签。<br>修改前:内联标签 <img>标签不会为自己的内容(图片)占据新的一行，所以图片和文字显示在同一行。.<br>修改后:我们把图片用段落标签<p>单独包起来之后，由于段落标签<p>是块状标签,会为自己的内容(图占据新的一行，所以文字段落和图片段落就显示在两行里了。块状标签和内联标签是HTML中两种主要的标签类型，它们最大的区别就是:块状标签会为自己的内容占据新的一行，而内联标签则不会。常见的块状标签有段落<p> 、标题<h1>、<div>等，常见的内联标签有<span> 、图片<img>、| <strong> 等，在HTML中有很多标.签,大家不用在一开始的时候就试图记住所有的标签，在之后的学习和重复中，我们自然会慢慢记住常用的一些标签。</p>
-<p>文章中有标题，段落,图片。其中标题标签<h1> 和段落标签<p>是独占一行的，它们属于块状标签。而<span>、<img>、<strong>标签,它们只占一行中的一部分，它们属于内联标签。我们可以看到，内联标签常常被嵌套在块状标签中。</p>
-<p><strong>标题标签</strong></p>
-<p>标题标签<h1>~<h6><br>第一步，我们要完成文章的标题。<br>HTML中提供了6个标签,用来表示文章的标题。按照标题的等级,一共分成六级。<h1> 到<h6>分别对应一级标签到六级标签，数字越大，级别越低，对应的标题看起来就越小。:</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/6.png" alt="img"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- h1-h6是块状标签 --&gt;</span><br><span class="line">&lt;h1&gt;Beautiful World&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- h2是h1的子标题 --&gt;</span><br><span class="line">&lt;h2&gt;Islands&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- h3是h2的子标题 --&gt;</span><br><span class="line">&lt;h3&gt;Maldives&lt;/h3&gt;</span><br><span class="line">&lt;h3&gt;Crete Island&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Mountains&lt;/h2&gt;</span><br><span class="line">&lt;h3&gt;Matterhorn, Swiss-Italian Border&lt;/h3&gt;</span><br><span class="line">&lt;h3&gt;Kirkjufell&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
-
-<p>从上面这里例子中我们可以看到，下一级标题是上一级标题的子标题，一级标题后可以有多个二级标题。</p>
-<p>要注意:标题之间不可越级，比如一级标题<h1>下直接写三级标题<h3>，因为这样会导致文章失去清晰的文章结构。</p>
-<p><strong>常用文本标签</strong></p>
-<p>段落标签<p><br>接下来我们来写文章中的段落。</p>
-<p>这里要用到<p>标签,这是最常用的HTML标签，是一个块状标签,代表文章的一个段落(paragraph) 。在HTML中，很多标签都可以嵌套其他标签，段落标签<p>也不例外，任何想以段落显示的内容，比如文本、图片和表单项,都可以放进<p> 标签。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/7.png" alt="img"></p>
-<p>内联标签<strong><br>下面我们要给文章中重点标注的词句加粗。</p>
-<p>这里我们会用到<strong>标签。<strong>是一个行内标签，表示它包含的内容具有很强的重要性，需要引起注意。浏览器会以粗体显示内容。</p>
-<p>一 句话中的<strong>重点内容</strong></p>
-
-<p>显示效果:</p>
-<p>​      一句话中的<strong>重点内容</strong></p>
-<p>小知识:| <b> 标签也能让内容变粗体，但它和<strong>不同，它没有语义，只是单纯表示样式加粗。</p>
-<p>内联标签<span></p>
-<p>下面的段落中，我们将岛名”Maldives”用<span>包裹起来。<span>这是一个内联标签(即不会产生换行),通常表示一个行内短语，使用<span>可以使网页更有条理。<strong> 标签可以使文本变粗体，<span> 则不是这样的，如果没有加样式文件，<span>在样式上与普通文本不会有区别。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/10.png" alt="img"></p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/11.png" alt="img"></p>
-<p><strong>图片标签</strong></p>
-<p>现在我们要给文章插入一些图片，让它看起来更丰满有趣。<br>插入图片我们要用到<img>标签,我们已经见过它很多次了，它的使<br>用方法如下:</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/16.png" alt="img"></p>
-<p>显示效果:</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/1-3-island-2.jpg" alt="img"></p>
-<p>在标签属性src 中写入图片的相对路径或绝对路径就可以啦。</p>
-<p>图片标签还有个alt属性,这个属性定义了描述图像的替换文本。如果图像的URL是错误的，该图像不在支持的格式列表中，或者如果图像还没有被下载，用户将看到这里的替换文本。alt的效果是这样的:</p>
-<p>加载不出来</p>
-<p><strong>小知识</strong></p>
-<p>除了静态的jpg，jpeg，png之类的图片，我们还可以用img标签想网页中插入gif动图哦</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/17.png?x-oss-process=image/resize,w_800/watermark,image_d2F0ZXJtYXNrLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzEwMA==,t_60,g_se,x_10,y_10" alt="img"></p>
-<p>网页显示效果：</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/x-1-3-1.gif" alt="img"></p>
-<p><strong>链接标签</strong></p>
-<p>最后，我们要给文章加上原文链接。<br>HTML给我们提供了链接标签a，给文章添加链接。<br><a>标签是内联标签,用户点击后，浏览器会跳转到指定的网址。下面就是一个典型的链接。<br>链接代码:</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/12.png" alt="img"></p>
-<p>显示效果：</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/13.png" alt="img"></p>
-<p>浏览器显示”优课达”，文字下面默认会有下划线，表示这是一一个链接。用户点击后，浏览器跳转到href属性指定的网址。</p>
-<p><a>标签内部不仅可以放置文字，也可以放置其他元素，比如段落、<br>图像、多媒体等等。比如:</p>
-<p>链接代码:</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/14.png" alt="img"></p>
-<p>显示效果：</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/15.png" alt="img"></p>
-<p>下面我们来了解一下 链接标签中比较重要的属性:<br>链接标签的属性<br><strong>href</strong><br>href属性给出链接指向的网址。它的值应该是- -个URL或者锚点。<br><em>URL:统一资源定位符(英语: Uniform Resource Locator,缩</em><br><em>写: URL;或称统一资源定位器、 定位地址、URL地址,俗称网页</em><br><em>地址或简称网址)是因特网上标准的资源的地址(Address) 。</em><br><strong>title</strong><br>title属性给出链接的说明信息。鼠标悬停在链接上方时，浏览器会将<br>这个属性的值，以提示块的形式显示出来。title 属性:、</p>
-<p><strong>target</strong><br>target属性指定如何展示打开的链接。<br>target属性的值也可以是“_ self”、 “_ blank”、 “_parent”、 “_top”四个关键字之一。</p>
-<p>1.当它为self时表示在当前页面打开，target默认<br>为”self”。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/18.png?x-oss-process=image/resize,w_800/watermark,image_d2F0ZXJtYXNrLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzEwMA==,t_60,g_se,x_10,y_10" alt="img"></p>
-<p>显示效果：<u>优课达</u>（点击可在当前页面打开）</p>
-<p>2.当它为_ blank时表示在新页面打开。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/19.png?x-oss-process=image/resize,w_800/watermark,image_d2F0ZXJtYXNrLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzEwMA==,t_60,g_se,x_10,y_10" alt="img"></p>
-<p>显示效果：<u>优课达</u>（点击在新页面打开）</p>
-<p>target属性的值分别是“_ self”、 “_ blank”时打开链接的表现：</p>
-<p><a target="_blank" rel="noopener" href="https://document.youkeda.com/P3-1-HTML-CSS/1.3/v1-3-1.mp4">https://document.youkeda.com/P3-1-HTML-CSS/1.3/v1-3-1.mp4</a></p>
-<p><strong>列表</strong></p>
-<p>除了我们之前在文章中用到的标题标签<h1>~<h6><br>段落标签<p>、内联标签<span><strong>图片标签<img> (也是内联标签)、链接标签<a> (也是内联标签)外，列表标签也是很常用的文本标签。</p>
-<p>HTML提供了无序列表标签<ul>和有序列表标签<ol> 供我们选择,这里我们选择无序列表标签<ul>列表的每一项都用标签<li> 表示，</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/20.png" alt="img"></p>
-<p>显示效果:<br>●列出今天要做的事情<br>●每天结束填写回顾和反思<br>●计划第二天的内容</p>
-<p>我们可以看到，每个列表项&lt;1i&gt;前面有个实心小圆点，这是无序列表的符号，当不需要考虑列表项的顺序时，我们常常采用无序列表标签<ul>如果想要显示有排序的列表项，我们会用<ol>标签,它的列表符号会是数字或者字母等，</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/21.png" alt="img"></p>
-<p>显示效果:<br>1.列出今天要做的事情<br>2.每天结束填写回顾和反思<br>3.计划第二天的内容</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
+    
       
       
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/03/01/HTML-%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2022" class="archive-year">2022</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Test1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+        <div class="archives">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/28/Test1/">Test1</a>
-    </h1>
-  
-
-        
-        <a href="/2022/02/28/Test1/" class="archive-article-date">
-  	<time datetime="2022-02-28T14:01:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-28</time>
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2022/03/01/HTML-%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/" class="archive-article-date">
+  	<time datetime="2022-03-01T01:56:51.649Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-01</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>  <strong>HTML元素的结构</strong></p>
-<p>  HTML的语言形式为标签包围的HTML元素,如:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;HTML是一门]伟大的语言! &lt;/p&gt;</span><br><span class="line">HTML标签</span><br><span class="line">&lt;p&gt;就是一个典型的HTML标签。 HTML标签有以下特点:</span><br></pre></td></tr></table></figure>
+        </div>
+    	 
+        <div class="article-info info-on-right">
+          
+          
 
-
-<p>1.由尖括号包围关键词组成，比如: </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt; 、| &lt;h1&gt; 、| &lt;div&gt;、</span><br><span class="line">&lt;span&gt;等;</span><br></pre></td></tr></table></figure>
-
-
-<p>​    2.通常成对出现，比如<img src="/" alt="&lt;div&gt;">和</div> ，第一个就是开始标<br>​       签，第二个就是结束标签，要注意开始标签和结束标签的区<br>​        别在于,结束标签比开始标签多-一个”&#x2F;“;<br>​     3.虽然标签通常是成对出现的，但并不是所有标签都有对应的<br>​     结束标签，比如<input> 、| <img> 等，它们往往是单独呈<br>​      现的;<br>​          注意:在HTML 中标签名是大小写不敏感，<p> 和<P>是一样<br>​        的，但是现在一般要求标签统- -小写。</p>
-<p>​          剖析一个HTML元素<br>​          从下面这张图中我们可以看到，一个典型的HTML元素通常是由<br>​           开始标签、结束标签 和内容构成的。<br>​           如果是单独呈现的标签，一个标签就表示-一个元素。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/2.jpg" alt="2.jpg"></p>
-<p>   <strong>HTML中的嵌套</strong></p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/3.png" alt="img"></p>
-<p>在HTML中,元素可以发生嵌套。请看上面这段HTML代码，上面的代码中有两个元素<br>第一个元素:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;HTML是一门伟大的语言! &lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
-
-<p>开始标签: <p> 结束标签: </p> 内容: “HTML是一门伟大的语言!”<br>第二个元素:<br><strong><div><p>HTML是一门伟大的语言! </p></div></strong><br>开始标签: <div> 结束标签: </div>内容:”<p>HTML是一门伟大的语言! </p> “<br>第一个元素整体作为<div></div>的内容，嵌套在了<div></div>内部，从结构上发生了嵌套关系。</p>
-<p>div<br>元素是p元素的父元素,而p元素是div元素的子元素。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/16.png" alt="img"></p>
-<p><strong>完整的html文档结构</strong></p>
-<p>下面是一个简单，完整的html文档，我们一点点来看：</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/4.jpg" alt="img"></p>
-<ol>
-<li><!DOCTYPE html><p> .<br>(1).作用:告知浏览器该页面文件的文档类型，指示web浏览器使用哪个HTML版本编写页面。</p>
-<p>(2). 位置:&lt; !DOCTYPE&gt;声明必须是HTML文档的第一行，位于| <html> 标签之前。</p>
-<p>(3).|&lt;!DOCTYPE&gt;声明对大小写不敏感。(4).| &lt; !DOCTYPE&gt;声明没有结束标签。</p>
-</li>
-<li><html lang="en">... </html>
-(1).此元素可告知浏览器其自身是一个HTML文档。(2).| <html> 与</html>标签限定了文档的开始，点和结束点,在它们之间是文档的头部和主体。文档的头部由<head> 标签定义，而主体由<body>标签定义。(3).lang 属性(语言属性) :当搜索引擎或者浏览器拿到语言，属性后，有可能做一些针对指定语言的辅助操作，'en'表示英文。
-3.标签属性
-(1).标签可以拥有零个或多个标签属性，注意:标签属性与标签名称、标签属性与标签属性之间需用一个空格隔开。
-
-<p>(2). 标签属性可以赋予标签更多的信息,标签属性通常是以key&#x3D; “value”即名称&#x3D;”值”的形式出现。</p>
-<p>(3). 常见的标签属性有: class、 id、 style、lang、 src等。</p>
-<p>4.文档的头部<head>…</head><br>(1). head元素定义文档的头部，我们通常在这里引用样式表、提供元信息等。</p>
-<p>(2). 文档的头部中的<title>…</title> 定义文档的标题，在网页上体现为网页标签的标题。</p>
-<p>(3). -一个| <head> 元素必须包含且只能包含一个| <title>元素。元信息:又叫元数据，就是描述数据的数据。这里主要指文档的概要信息。</p>
-<p>5.文档的主体<body>…</body><br>(1). body元素定义文档的主体,包含文档的所有内容(比如文本、超链接、图像、表格和列表等等)。</p>
-</li>
-</ol>
-<p><strong>HTML中的注释</strong></p>
-<p>每一个编程语言都有注释，html也不例外，在HTML中我们用</p>
-<!-- -->标签来表示注释:
-
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/6.png" alt="img"></p>
-<p>网页中显示的内容如下:</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/7.png" alt="img"></p>
-<p>注释标签用于在源代码中插入注释。注释不会显示在浏览器网页中的。</p>
-<p><strong>认识MDN</strong></p>
-<p>什么是MDN<br>Mozilla开发者网络( Moilla Developer Network, MDN)是由Mozilla、Microsoft、 Google、 Samsung和W3C联合打造成的最好的Web文档，是学习Web开发的一个权威、全面、高质量的网站，文档丰富，资料全面，非常适合大家学习使用，请把它当成你Web开发学习时的百科全书。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/8.png" alt="img"><br>通常，在一个标签的文档中会有:标签使用示例多个，标签属性讲解，标签在各浏览器中的兼容性统计以及相关标签链接等内容,帮助大家更好的理解标签的相关知识。</p>
-<p>快，现在就去看看: MDN-标题标签文档</p>
-<p>MDN的使用<br>现在我们以<img> 为例，来演示如何使用MDN文档。<br>1.搜索<br>打开上面的链接，我们会看到这样的一个页面:<img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/11.jpg" alt="img"><br>(1) 在标注1的地方，我们可以切换网页显示的语言。</p>
-<p> (2) 在标注2的地方，我们输入img进行搜索。</p>
-<p>  因为我们要搜索的是img标签(html tag)， 所以点击第二条纪录:</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/12.jpg" alt="img"></p>
-<p>2.阅读文档<br>打开后看到如下界面，通常一个HTML标签(html tag)的文档都会包含该标签的概述、标签属性的介绍、应用的例子和浏览器兼容性等内容。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/13.jpg" alt="img"></p>
-<p>翻到介绍标签属性的位置，可以看到文档中介绍了img标签的各个标签属性的作用，下图中被框出来的title、align 、alt等都是 img标签的属性。</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/14.jpg" alt="img"></p>
-<p>在页面最开始的地方，可以看到使用的示例，到这里大家应该对如何使用img标签有了-定的了解:</p>
-<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.2/15.png" alt="img"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/02/28/Test1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
-  
-
-        
-        <a href="/2022/02/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2022-02-28T07:04:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章##"></a>第一章##</h2><p>内容：</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章##"></a>第二章##</h2><p>内容：</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献##"></a>参考文献##</h2><p>~</p>
-<p>~</p>
-<p>~</p>
-<p>~</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/02/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2022/02/28/hello-world/" class="archive-article-date">
-  	<time datetime="2022-02-28T06:55:24.746Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/02/28/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -570,9 +208,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
